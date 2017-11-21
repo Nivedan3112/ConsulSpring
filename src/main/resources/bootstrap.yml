@@ -1,0 +1,23 @@
+
+#Consul For 
+
+spring:
+  cloud:
+    consul:
+       host: localhost
+       port: 9500 
+       config:
+        fail-fast: true
+       discovery:
+        register-health-check: true
+        instance-id: consulclient
+        health-check-interval: 30s
+        scheme: https
+        format: YAML
+        fail-fast: true
+        
+ 
+
+       
+      
+  

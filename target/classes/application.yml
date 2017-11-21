@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Consul-Client
+
+logging:
+  file: C:\niv\Consul.log
+  level:
+    com.example.demo: DEBUG
+
+##One Way SSL Configurations for interacting with Consul Agent###
+    
+server:
+  port: 8081
+  ssl:
+    key-store: C:\Certs\nivedan_certs\consul-san.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    client-auth: NEED
+    enabled: true
+    #trust-store: C:\Cert\myserver1.keystore
+    #trust-store-password: cvshealth
+    
+    
+##Two Way SSL NEed to change the below property to NEED for 2 Way SSl ####    
+
+# client-auth: NEED
+    
+      
