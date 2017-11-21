@@ -37,6 +37,11 @@ The Consul Has Client Certificates in the Config.Json and required properties ac
 	}
 
 
+The ways Certs were Generated:
+
+We Used Openssl to generate certs.
+It has a Root CA Cert , A Client Cert and A Server Cert
+
 
 Note:
 The above Configurations work fine for one Way SSL Hanshake , for 2 way ssl We get a bad cert error
