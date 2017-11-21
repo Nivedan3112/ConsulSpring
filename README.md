@@ -1,4 +1,4 @@
-# Spring Boot Application
+# Spring Boot Application With Consul
 The Above is a Consul Integrated Spring Boot Application. I would Have Spring Tool Suite(STS) as my Ide to Import the following code as STS give
 more flexibility for Spring Based Applications.
 
@@ -8,7 +8,7 @@ Discoverable.
 
 
 
-#Consul Side
+#Consul Side Configurations
 Consul Versions Used: Previous 0.9.3 and Now 1.0.1 RC1 Release.
 
 The Consul Has Client Certificates in the Config.Json and required properties accordingly
@@ -35,3 +35,9 @@ The Consul Has Client Certificates in the Config.Json and required properties ac
 		"serf_wan": 9302,
 		"server": 9300
 	}
+
+
+
+Note:
+The above Configurations work fine for one Way SSL Hanshake , for 2 way ssl We get a bad cert error
+
